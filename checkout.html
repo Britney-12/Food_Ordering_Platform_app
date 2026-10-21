@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABUAD Cafeteria Eats | Checkout</title>
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><nav class="navbar container"><a class="logo" href="index.html">ABUAD <span>Eats</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><div class="nav-links"><a href="index.html">Home</a><a href="cafeteria.html">Cafeterias</a><a class="active" href="checkout.html">Checkout</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div></nav></header>
+<main>
+  <section class="page-banner"><div class="container"><span class="eyebrow">Almost there</span><h1>Checkout & payment</h1><p>Confirm your order and provide the details needed to complete this demonstration checkout.</p></div></section>
+  <section class="section"><div class="container content-grid">
+    <form class="panel" id="payment-form">
+      <h2>Customer details</h2>
+      <div class="form-group"><label for="customer-name">Full name</label><input id="customer-name" name="customer-name" required placeholder="Enter your name"></div>
+      <div class="form-group"><label for="customer-email">Email address</label><input id="customer-email" name="customer-email" type="email" required placeholder="you@example.com"></div>
+      <div class="form-group"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" required placeholder="Enter phone number"></div>
+      <div class="form-group"><label for="pickup">Pickup location / cafeteria</label><select id="pickup" name="pickup" required><option value="">Choose a location</option><option>Cafeteria A</option><option>Cafeteria B</option><option>Cafeteria C</option></select></div>
+      <h2 style="margin-top:26px">Payment method</h2>
+      <div class="form-group"><label for="payment-method">Select payment option</label><select id="payment-method" name="payment-method" required><option value="">Choose payment method</option><option>Pay at pickup (demo)</option><option>Bank transfer (demo only)</option><option>Card payment (demo only)</option></select></div>
+      <p class="notice">This is a student demo. It does not collect card details or process real payments. Do not enter real banking or card information.</p>
+      <button class="btn btn-primary" type="submit">Place demo order</button>
+      <p id="payment-message" class="form-message" role="status"></p>
+    </form>
+    <aside class="panel">
+      <h2>Your order</h2><div id="cart-items"><p class="small">Your cart is empty. Visit the cafeteria page to add food.</p></div>
+      <div class="summary-row"><span>Delivery / service fee</span><span>₦300</span></div>
+      <div class="summary-row"><span>Subtotal</span><strong id="cart-subtotal">₦0</strong></div>
+      <div class="summary-row total"><span>Total</span><span id="cart-total">₦0</span></div>
+      <a class="btn btn-outline" style="margin-top:14px" href="cafeteria.html">Add more food</a>
+    </aside>
+  </div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><strong>ABUAD Cafeteria Eats</strong><p>Campus food ordering made easier.</p></div><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="cafeteria.html">Cafeterias</a></div><p>© 2026 ABUAD Eats — Student project.</p></div></footer>
+</body>
+</html>
